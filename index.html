@@ -582,6 +582,22 @@
     }
     .register-meta-item svg { color: var(--ultra-violet); }
 
+    /* ===== GHL FORM EMBED ===== */
+    .ghl-form-wrap {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-top: 0;
+      width: 100%;
+    }
+    .ghl-form-wrap iframe {
+      width: 100%;
+      min-height: 460px;
+      border: none;
+      display: block;
+    }
+
     /* ===== FOOTER ===== */
     footer {
       padding: 40px 0;
@@ -620,7 +636,7 @@
     <div class="container">
       <div class="header-inner">
         <img src="eaas-logo-small.png" alt="EaaS AI" class="logo-small" />
-        <a href="#register" class="header-cta">Save My Free Spot</a>
+        <a href="#register" class="header-cta" style="scroll-behavior:smooth;">Save My Free Spot</a>
       </div>
     </div>
   </header>
@@ -905,8 +921,26 @@
             Live Online — 60 Minutes
           </div>
         </div>
-        <a href="#REGISTRATION_LINK_HERE" class="btn-full">Yes! Save My Free Spot →</a>
-        <span class="btn-note" style="color: var(--mid-text); text-align: center; display: block; margin-top: 12px;">100% free. No tech experience needed. Just bring your questions.</span>
+        <div class="ghl-form-wrap">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/2OWSnkK8lvnjRYDtCW41"
+            style="width:100%;min-height:460px;border:none;border-radius:10px;"
+            id="inline-2OWSnkK8lvnjRYDtCW41"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Spark Sessions"
+            data-height="441"
+            data-layout-iframe-id="inline-2OWSnkK8lvnjRYDtCW41"
+            data-form-id="2OWSnkK8lvnjRYDtCW41"
+            title="Spark Sessions"
+          ></iframe>
+        </div>
+        <span class="btn-note" style="color: var(--mid-text); text-align: center; display: block; margin-top: 16px;">100% free. No tech experience needed. Just bring your questions.</span>
       </div>
     </div>
   </section>
@@ -919,5 +953,6 @@
     </div>
   </footer>
 
+  <script src="https://link.msgsndr.com/js/form_embed.js"></script>
 </body>
 </html>
